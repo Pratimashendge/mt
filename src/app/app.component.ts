@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Ipost } from './models/posts';
+import { posts } from './constant/posts';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mt';
+  postsArr:Array<Ipost>=posts;
 }
